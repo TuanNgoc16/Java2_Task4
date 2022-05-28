@@ -20,7 +20,7 @@ public class Northwind {
             while(rset.next()){
                 String title=rset.getString("title");
                 double price=rset.getDouble("price");
-                int qty= rset.getInt("qty");
+                
                 System.out.println(title+","+price+ "'"+ rowCount);
             }
             System.out.println("Total number of records="+rowCount);
